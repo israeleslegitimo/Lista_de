@@ -18,12 +18,33 @@ namespace Lista_de
             peliculas.Add(new Peliculas("Sonic"));
             peliculas.Add(new Peliculas("Eraze una vez...en Holliwood"));
 
+
+            //
+              //* CREAMOS UNA LISTA PARA LOS ACTORES 
+            List<Actores> Actores=new List<Actores>();
+            
+            
+            Actores.Add(new Actores("juan"));
+            Actores.Add(new Actores("PEDRO"));
+            Actores.Add(new Actores("LUIS"));
+            Actores.Add(new Actores("RAUL"));
+            Actores.Add(new Actores("STEVE"));
+
+
             //foreach para iterar el imprimir
             foreach(Peliculas I in peliculas)
             {
                 I.imprime();
             }
 
+            //FOREACH
+            foreach(Actores I in Actores)
+            {
+                I.imprimea();
+            }
+
+          
+            
 
 
         }
@@ -36,6 +57,7 @@ namespace Lista_de
         public void imprime()
         {
             Console.WriteLine("Titulo:"+Titulo);
+            
         }
         //
         public Peliculas(string c)
@@ -43,5 +65,25 @@ namespace Lista_de
             Titulo = c;
         }
        
+    }
+    class Actores
+    {
+        public string nombre;
+        //
+        public Actores(string n)
+        {
+            nombre=n;
+        }
+
+        public void imprimea()
+        {
+           
+            Console.WriteLine("Actores: "+nombre);
+        }
+
+        
+
+        
+
     }
 }
