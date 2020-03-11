@@ -37,7 +37,6 @@ namespace Lista_de
         public string Titulo;
         public int año;
         public string nombre;
-        
 
         //
         public void imprime()
